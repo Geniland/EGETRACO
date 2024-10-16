@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EGETRACO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+       .partner-section {
+            display: flex;
+            overflow: hidden; /* Cache les logos en dehors du conteneur */
+            align-items: center;
+        }
+
+        .partner-carousel {
+            display: flex;
+            animation: scroll 30s linear infinite; /* Animation de défilement */
+        }
+
+        .partner-card {
+            flex: 0 0 auto; /* Empêche les éléments de se redimensionner */
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .partner-logo {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Animation CSS pour le défilement */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+ </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid px-0 AccueilBack">
+            <div class="row gx-0">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand m-0 p-0 d-flex  justify-content-center ">
+                        <!-- <h1 class="m-0 text-uppercase logoEgetraco">EGETRACO</h1> -->
+                        <img class="logo" src="EGETRACO_IMG/logo.png" alt="logo" >
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-9 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-0">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">info@egetraco.com</p>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <p class="mb-0">+228 91404949 / 70217642</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 px-5 text-end">
+                            <div class="d-inline-flex align-items-center py-2">
+                                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="" href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 ">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-uppercase LogoToggle">EGETRACO</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link ">Accueil</a>
+                                <a href="A_propos.html" class="nav-item nav-link ">A propos</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Realisation</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="realisation.html" class="dropdown-item">Realisation</a>
+                                        <a href="Produit.html" class="dropdown-item">Produits mis en vente</a>
+                                    
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                            </div>
+                            <a href="#" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">ENG<i class="fa fa-arrow-right ms-3"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+         <!-- Hero Start -->
+         <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Contact</h1>
+                <!-- <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Events</li>
+                </ol> -->
+            </div>
+        </div>
+        <!-- Hero End -->
+
+       
+
+
+        <!-- Contact Start -->
+            <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="p-5 bg-light rounded contact-form">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Get in touch</small>
+                                <h1 class="display-5 mb-0">Nous joindre en un clic!</h1>
+                            </div>
+                            <div class="col-md-6 col-lg-7">
+                                <p class="mb-4">Laissez nous un message</a>.</p>
+                                <form>
+                                    <input type="text" class="w-100 form-control p-3 mb-4 border-primary bg-light" placeholder="Your Name">
+                                    <input type="email" class="w-100 form-control p-3 mb-4 border-primary bg-light" placeholder="Enter Your Email">
+                                    <textarea class="w-100 form-control mb-4 p-3 border-primary bg-light" rows="4" cols="10" placeholder="Your Message"></textarea>
+                                    <button class="w-100 btn btn-primary form-control p-3 border-primary bg-primary rounded-pill" type="submit">Submit Now</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6 col-lg-5">
+                                <div>
+                                    <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
+                                        <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                        <div class="">
+                                            <h4>Address</h4>
+                                            <p>LOME - TOGO</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
+                                        <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                        <div class="">
+                                            <h4>Mail Us</h4>
+                                            <p class="mb-2">soclouyaovi@yahoo.com</p>
+                                            <p class="mb-0">info@egetraco.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex w-100 border border-primary p-4 rounded">
+                                        <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div class="">
+                                            <h4>Telephone</h4>
+                                            <p class="mb-2">(+228) 91 40 49 49</p>
+                                            <p class="mb-0">(+228) 70 21 76 42</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Contact End -->
+
+          <!-- partenaire start -->
+          <div class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="display-5">Ils nous ont fait confiance</h2>
+            </div>
+    
+            <!-- Section des partenaires avec défilement automatique -->
+            <div class="partner-section">
+                <div class="partner-carousel">
+                    <!-- Card Partenaire 1 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/ANADEB.png" alt="Logo Partenaire 1" class="partner-logo mb-3">
+                            <h5 class="card-title">ANADEB tsévié</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Card Partenaire 2 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/CEET.png" alt="Logo Partenaire 2" class="partner-logo mb-3">
+                            <h5 class="card-title">CEET Direction</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Card Partenaire 3 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/COPEC AD.png" alt="Logo Partenaire 3" class="partner-logo mb-3">
+                            <h5 class="card-title">COOPEC AD</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Card Partenaire 4 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/IB ba.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">IB Banque</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/Banque Atlantik.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">Banque Atlantik</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/CECO.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">CECO</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/ECOBANK.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">ECOBANK</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/GGI.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">GGI</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/Mairie_Adetikope2.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">Mairie Adetikope</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/Ministere_communication4.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">Ministere communication et media</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/MNS.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">MNS</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/NSIA banque.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">NSIA banque</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SARA GROUP1.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SARA GROUP</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SATH-BTP5.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SATH-BTP</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SETA.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SETA</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SNB3.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SNB</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Ajoutez d'autres logos ici -->
+    
+                    <!-- Répétez les logos pour rendre le défilement plus fluide -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/ANADEB.png" alt="Logo Partenaire 1" class="partner-logo mb-3">
+                            <h5 class="card-title">ANADEB tsévié</h5>
+                        </div>
+                    </div>
+    
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/CEET.png" alt="Logo Partenaire 2" class="partner-logo mb-3">
+                            <h5 class="card-title">CEET Direction</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Ajoutez d'autres répétitions si nécessaire -->
+                </div>
+            </div>
+        </div>
+        <!-- partenaire start -->
+
+
+        <!-- Footer Start -->
+            <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+                <div class="container pb-5">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="bg-primary rounded p-4">
+                                <a href="index.html"><h1 class="text-white text-uppercase mb-3">EGETRACO</h1></a>
+                                <!-- <p class="text-white mb-0">
+                                    Download <a class="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <h6 class="section-title text-start couleurFooter text-uppercase mb-4">Contact</h6>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>LOME – ADIDOGOME </p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+228) 70 21 76 42 / 91 40 49 49 </p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>Info@egetraco.com </p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12">
+                            <div class="row gy-5 g-4">
+                                <div class="col-md-6">
+                                    <h6 class="section-title text-start couleurFooter text-uppercase mb-4">Company</h6>
+                                    <a class="btn btn-link" href="">A propos</a>
+                                    <a class="btn btn-link" href="">Contact</a>
+                                    <a class="btn btn-link" href="">Privacy Policy</a>
+                                    <a class="btn btn-link" href="">Terms & Condition</a>
+                                    <a class="btn btn-link" href="">Support</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="section-title text-start couleurFooter text-uppercase mb-4">Services</h6>
+                                    <a class="btn btn-link" href="">Construction de Bâtiments Commerciaux</a>
+                                    <a class="btn btn-link" href="">Rénovation et Réhabilitation</a>
+                                    <a class="btn btn-link" href="">Conseil et Accompagnement</a>
+                                    <a class="btn btn-link" href="">Vente de accessoires de construction...</a>
+                                    <a class="btn btn-link" href="">Divers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#">Egetraco</a>, All Right Reserved. 
+                                Designed By <a class="border-bottom" href="#">Geni-codex</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

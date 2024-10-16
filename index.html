@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EGETRACO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+       .partner-section {
+            display: flex;
+            overflow: hidden; /* Cache les logos en dehors du conteneur */
+            align-items: center;
+        }
+
+        .partner-carousel {
+            display: flex;
+            animation: scroll 30s linear infinite; /* Animation de défilement */
+        }
+
+        .partner-card {
+            flex: 0 0 auto; /* Empêche les éléments de se redimensionner */
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .partner-logo {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Animation CSS pour le défilement */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid px-0 AccueilBack">
+            <div class="row gx-0">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand m-0 p-0 d-flex  justify-content-center ">
+                        <!-- <h1 class="m-0 text-uppercase logoEgetraco">EGETRACO</h1> -->
+                        <img class="logo" src="EGETRACO_IMG/logo.png" alt="logo" >
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-9 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-0">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">info@egetraco.com</p>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <p class="mb-0">+228 91404949 / 70217642</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 px-5 text-end">
+                            <div class="d-inline-flex align-items-center py-2">
+                                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="" href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 ">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0  text-uppercase LogoToggle">EGETRACO</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                                <a href="A_propos.html" class="nav-item nav-link">A propos</a>
+                                <a href="Service.html" class="nav-item nav-link">Services</a>
+                               
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Realisation</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="realisation.html" class="dropdown-item">Realisation</a>
+                                        <a href="Produit.html" class="dropdown-item">Produits mis en vente</a>
+                                    
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <a href="#" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">ENG<i class="fa fa-arrow-right ms-3"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-0 ">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img class="w-100" src="EGETRACO_IMG/bannier_Accueil2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-2 CarouselT" style="max-width: 700px;">
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">EGETRACO</h6>
+                                <h1 class="display-3 text-white mb-4 animated slideInDown">Votre partenaire de confiance</h1>
+                                <a href="Produit.html" class="btn py-md-3 px-md-5 me-3 animated slideInLeft couleur">Commander un produit</a>
+                                <a href="Service.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Nos services</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item imagEdite">
+                        <img class="w-100" src="EGETRACO_IMG/voir9.png" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-1 CarouselT" style="max-width: 700px;">
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">EGETRACO</h6>
+                                <h1 class="display-3 text-white mb-4 animated slideInDown">l'éfficacité au premier plan</h1>
+                                <a href="Produit.html" class="btn py-md-3 px-md-5 me-3 animated slideInLeft couleur">Commander un produit</a>
+                                <a href="Service.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Nos services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+        <!-- Carousel End -->
+
+        <!-- About Satrt -->
+        <div div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <img src="EGETRACO_IMG/Screenshot 2024-10-08 at 09-03-04 Microsoft Word - CALTALOGUE - Catalogue mise à jour.pdf.png" class="img-fluid rounded" alt="">
+                    </div>
+                    <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                        
+                        <h1 class="display-5 mb-4">A propos de E.GE.TRA.CO</h1>
+                        <p class="mb-4">
+                            Par la présente note, nous tenons vous informer de l’existence de notre société E.GE.TRA.CO (Entreprise Général des Travaux de Constriction) spécialisée dans le domaine de bâtiments et de routes. 
+                            Inscrit sur le site de DNCMP, E.GE.TRA.CO  est une entreprise d’exécution des travaux BTP de droit togolais, indépendante de tout groupe industriel ou financier. Elle exerce ...</p>
+                        <div class="row g-4 text-dark mb-5">
+                           
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Ouvert 6/7 jours
+                            </div>
+                       
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    
+                    <h1 class="display-5 mb-5">Nos services</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-building fa-7x mb-4"></i>
+                                    <h4 class="mb-3">construction des batiments</h4>
+                                    <p class="mb-4">Nous réalisons des projets de construction et de BTP de qualité.</p>
+                                    <a href="Service.html" class="btn px-4 py-2 rounded-pill couleur">voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-bolt fa-7x mb-4"></i>
+                                    <h4 class="mb-3">Electricité</h4>
+                                    <p class="mb-4">Installation électrique et maintenance pour vos projets.</p>
+                                    <a href="Service.html" class="btn px-4 py-2 rounded-pill couleur">voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-solar-panel fa-7x mb-4"></i>
+                                    <h4 class="mb-3">Energie solaire</h4>
+                                    <p class="mb-4">Solutions d'énergie solaire pour une énergie durable.</p>
+                                    <a href="Service.html" class="btn px-4 py-2 rounded-pill couleur">voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-water fa-7x mb-4"></i>
+                                    <h4 class="mb-3">Réalisation de forages</h4>
+                                    <p class="mb-4">Services de forages pour l'approvisionnement en eau.</p>
+                                    <a href="Service.html" class="btn px-4 py-2 rounded-pill couleur">voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!-- Service End -->
+   
+        
+            <!-- realisation Start -->
+            <div class="container-fluid event py-6">
+                <div class="container">
+                    <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                        
+                        <h1 class="display-5 mb-5">Nos réalisations</h1>
+                    </div>
+                    <div class="tab-class text-center">
+                        <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                            <li class="nav-item p-2">
+                                <a class="d-flex mx-2 py-2 border bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                    <span class="text-dark" style="width: 150px;">Tout</span>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="d-flex py-2 mx-2 border bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                    <span class="text-dark" style="width: 150px;">Piste</span>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="d-flex mx-2 py-2 border bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                    <span class="text-dark" style="width: 150px;">DALOTS</span>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="d-flex mx-2 py-2 border bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                    <span class="text-dark" style="width: 150px;">INSTALLATION</span>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="d-flex mx-2 py-2 border bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                    <span class="text-dark" style="width: 150px;">CASIERAGE</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <div class="row g-4">
+                                            
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir23.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Piste</h4>
+                                                        <a href="EGETRACO_IMG/voir23.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir24.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Piste</h4>
+                                                        <a href="EGETRACO_IMG/voir24.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir25.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Piste</h4>
+                                                        <a href="EGETRACO_IMG/voir25.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir26.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Piste</h4>
+                                                        <a href="EGETRACO_IMG/voir26.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir27.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">CASIERAGE ET DE PISTE RURALE</h4>
+                                                        <a href="EGETRACO_IMG/voir27.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir28.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="EGETRACO_IMG/voir28.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir29.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="EGETRACO_IMG/voir29.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir30.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">INSTALLATION DE FORAGE MIXTE</h4>
+                                                        <a href="EGETRACO_IMG/voir30.png" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <div class="row g-4">
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir25.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Wedding</h4>
+                                                        <a href="EGETRACO_IMG/voir25.png" data-lightbox="event-8" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voir26.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Wedding</h4>
+                                                        <a href="EGETRACO_IMG/voir26.png" data-lightbox="event-9" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <div class="row g-4">
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voie.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="EGETRACO_IMG/voie.png" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voie1.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="EGETRACO_IMG/voie1.png" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voie2.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="EGETRACO_IMG/voie2.png" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voie3.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="EGETRACO_IMG/voie3.png" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="EGETRACO_IMG/voie4.png" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="EGETRACO_IMG/voie4.png" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-4" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <div class="row g-4">
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="img/event-5.jpg" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="img/01.jpg" data-lightbox="event-12" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="img/event-6.jpg" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Corporate</h4>
+                                                        <a href="img/01.jpg" data-lightbox="event-13" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-5" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <div class="row g-4">
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="img/event-7.jpg" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Buffet</h4>
+                                                        <a href="img/01.jpg" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-3">
+                                                <div class="event-img position-relative">
+                                                    <img class="img-fluid rounded w-100" src="img/event-8.jpg" alt="">
+                                                    <div class="event-overlay d-flex flex-column p-4">
+                                                        <h4 class="me-auto">Buffet</h4>
+                                                        <a href="img/01.jpg" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Realisation End -->
+
+              <!-- Room Start -->
+          <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Nos produit</h1>
+                    <h4 class="mb-5">Explorez nos <span class="text-primary text-uppercase">Produits</span></h4>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="Produit/ampoule murale.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Prix (FCFA)</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Ampoule murale</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                               
+
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm couleur rounded py-2 px-4" href="Produit.html">Voir Detail</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="Produit/ampoule5W.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Prix (FCFA)</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">ampoule 5W</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm couleur rounded py-2 px-4" href="Produit.html">Voir Detail</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="Produit/ampouleTubeLed.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Prix (FCFA)</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">ampoule Tube Led</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm couleur rounded py-2 px-4" href="Produit.html">Voir Detail</a>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Room End -->
+
+        
+
+        <!-- Contact Start -->
+            <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="p-5 bg-light rounded contact-form">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Get in touch</small>
+                                <h1 class="display-5 mb-0">Nous joindre en un clic!</h1>
+                            </div>
+                            <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                                <iframe class="position-relative rounded w-100 h-100"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.734825205202!2d1.1558782!3d6.1853493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102159c791a1bd25%3A0x541fa05973db1f0c!2sAKB%20Communication!5e0!3m2!1sfr!2stg!4v1696955053071!5m2!1sfr!2stg" "
+                                    frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0">
+                                </iframe>
+                            </div>
+                            <div class="col-md-6 col-lg-5">
+                                <div>
+                                    <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
+                                        <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                        <div class="">
+                                            <h4>Address</h4>
+                                            <p>LOME TOGO</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex w-100 border border-primary p-4 rounded mb-4">
+                                        <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                        <div class="">
+                                            <h4>Mail Us</h4>
+                                            <p class="mb-2">soclouyaovi@yahoo.com</p>
+                                            <p class="mb-0">info@egetraco.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex w-100 border border-primary p-4 rounded">
+                                        <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div class="">
+                                            <h4>Telephone</h4>
+                                            <p class="mb-2">(+228) 91 40 49 49</p>
+                                            <p class="mb-0">(+228) 70 21 76 42</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Contact End -->
+
+        <!-- partenaire start -->
+        <div class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="display-5">Ils nous ont fait confiance</h2>
+            </div>
+    
+            <!-- Section des partenaires avec défilement automatique -->
+            <div class="partner-section">
+                <div class="partner-carousel">
+                    <!-- Card Partenaire 1 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/ANADEB.png" alt="Logo Partenaire 1" class="partner-logo mb-3">
+                            <h5 class="card-title">ANADEB tsévié</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Card Partenaire 2 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/CEET.png" alt="Logo Partenaire 2" class="partner-logo mb-3">
+                            <h5 class="card-title">CEET Direction</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Card Partenaire 3 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/COPEC AD.png" alt="Logo Partenaire 3" class="partner-logo mb-3">
+                            <h5 class="card-title">COOPEC AD</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Card Partenaire 4 -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/IB ba.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">IB Banque</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/Banque Atlantik.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">Banque Atlantik</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/CECO.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">CECO</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/ECOBANK.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">ECOBANK</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/GGI.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">GGI</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/Mairie_Adetikope2.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">Mairie Adetikope</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/Ministere_communication4.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">Ministere communication et media</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/MNS.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">MNS</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/NSIA banque.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">NSIA banque</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SARA GROUP1.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SARA GROUP</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SATH-BTP5.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SATH-BTP</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SETA.png" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SETA</h5>
+                        </div>
+                    </div>
+
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/SNB3.jpg" alt="Logo Partenaire 4" class="partner-logo mb-3">
+                            <h5 class="card-title">SNB</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Ajoutez d'autres logos ici -->
+    
+                    <!-- Répétez les logos pour rendre le défilement plus fluide -->
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/ANADEB.png" alt="Logo Partenaire 1" class="partner-logo mb-3">
+                            <h5 class="card-title">ANADEB tsévié</h5>
+                        </div>
+                    </div>
+    
+                    <div class="card partner-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="EGETRACO_IMG/logo/CEET.png" alt="Logo Partenaire 2" class="partner-logo mb-3">
+                            <h5 class="card-title">CEET Direction</h5>
+                        </div>
+                    </div>
+    
+                    <!-- Ajoutez d'autres répétitions si nécessaire -->
+                </div>
+            </div>
+        </div>
+        <!-- partenaire start -->
+
+
+        <!-- Footer Start -->
+            <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+                <div class="container pb-5">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="bg-primary rounded p-4">
+                                <a href="index.html"><h1 class="text-white text-uppercase mb-3">EGETRACO</h1></a>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <h6 class="section-title text-start couleurFooter text-uppercase mb-4">Contact</h6>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>LOME – ADIDOGOME </p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+228) 70 21 76 42 / 91 40 49 49 </p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>Info@egetraco.com </p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12">
+                            <div class="row gy-5 g-4">
+                                <div class="col-md-6">
+                                    <h6 class="section-title text-start couleurFooter text-uppercase mb-4">Company</h6>
+                                    <a class="btn btn-link" href="">A propos</a>
+                                    <a class="btn btn-link" href="">Contact</a>
+                                    <a class="btn btn-link" href="">Privacy Policy</a>
+                                    <a class="btn btn-link" href="">Terms & Condition</a>
+                                    <a class="btn btn-link" href="">Support</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="section-title text-start couleurFooter text-uppercase mb-4">Services</h6>
+                                    <a class="btn btn-link" href="">Construction de Bâtiments Commerciaux</a>
+                                    <a class="btn btn-link" href="">Rénovation et Réhabilitation</a>
+                                    <a class="btn btn-link" href="">Conseil et Accompagnement</a>
+                                    <a class="btn btn-link" href="">Vente de accessoires de construction...</a>
+                                    <a class="btn btn-link" href="">Divers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#">Egetraco</a>, All Right Reserved. 
+                                Designed By <a class="border-bottom" href="#">Geni-codex</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
