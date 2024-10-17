@@ -166,12 +166,28 @@
                             </div>
                             <div class="col-md-6 col-lg-7">
                                 <p class="mb-4">Laissez nous un message.</p>
+                               
                                 <form id="contact-form">
-                                    <input type="text" name="name" class="w-100 form-control p-3 mb-4" placeholder="Votre Nom" required>
-                                    <input type="email" name="email" class="w-100 form-control p-3 mb-4" placeholder="Votre Email" required>
-                                    <textarea name="message" class="w-100 form-control mb-4" rows="4" placeholder="Votre Message" required></textarea>
-                                    <button class="w-100 btn btn-primary" type="submit">Envoyer</button>
-                                </form>
+                                    <div class="field">
+                                     
+                                      <input type="text" name="from_name" id="from_name" placeholder="Votre nom" class="w-100 form-control p-3 mb-4">
+                                    </div>
+                                    <div class="field">
+                                      
+                                        <input type="text" name="reply_to" id="reply_to" placeholder="Email" class="w-100 form-control p-3 mb-4">
+                                    </div>
+                                    <div class="field">
+                                      
+                                      <input type="text" name="to_name" id="to_name" value="SIKA entreprise" readonly class="w-100 form-control p-3 mb-4" >
+                                    </div>
+                                    <div class="field">
+                                     
+                                      <input type="text" name="message" id="message" placeholder="Message" class="w-100 form-control mb-4" rows="4">
+                                    </div>
+                                    
+                                  
+                                    <input type="submit" id="button" value="Send Email" >
+                                  </form>
                             </div>
                             <div class="col-md-6 col-lg-5">
                                 <div>
