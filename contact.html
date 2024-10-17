@@ -166,15 +166,15 @@
                             </div>
                             <div class="col-md-6 col-lg-7">
                                 <p class="mb-4">Laissez nous un message.</p>
-                               
+                              
                                 <form id="contact-form">
                                     <div class="field">
                                      
-                                      <input type="text" name="from_name" id="from_name" placeholder="Votre nom" class="w-100 form-control p-3 mb-4">
+                                      <input type="text" name="from_name" id="from_name" placeholder="Votre nom" class="w-100 form-control p-3 mb-4" required>
                                     </div>
                                     <div class="field">
                                       
-                                        <input type="text" name="reply_to" id="reply_to" placeholder="Email" class="w-100 form-control p-3 mb-4">
+                                        <input type="text" name="reply_to" id="reply_to" placeholder="Email" class="w-100 form-control p-3 mb-4" required>
                                     </div>
                                     <div class="field">
                                       
@@ -182,11 +182,11 @@
                                     </div>
                                     <div class="field">
                                      
-                                      <input type="text" name="message" id="message" placeholder="Message" class="w-100 form-control mb-4" rows="4">
+                                      <textarea type="text" name="message" id="message" placeholder="Message" class="w-100 form-control mb-4" rows="4" required></textarea>
                                     </div>
                                     
                                   
-                                    <input type="submit" id="button" value="Send Email" >
+                                    <button class="w-100 btn btn-primary" type="submit">Envoyer</button>
                                   </form>
                             </div>
                             <div class="col-md-6 col-lg-5">
